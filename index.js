@@ -1,9 +1,7 @@
-const { upload, download, progressResult, fileTransferResult} = require('./src/file_transfer');
+const { upload, download } = require('./src/file_transfer');
 
 
-module.exports={
+module.exports = {
     upload,
-    download,
-    progressResult,
-    fileTransferResult
-};
+    download
+}
