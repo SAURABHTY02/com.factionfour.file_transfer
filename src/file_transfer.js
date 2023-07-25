@@ -1,10 +1,10 @@
 const fs = require('fs');
 const axios = require('axios');
 
-const upload =(filepath)=>{
+const upload =(url,filepath)=>{
     var formData = new FormData();
     formData.append('file', fs.createReadStream(filepath));
-    axios.post('[Custom URL]', formData, {
+    axios.post(url, formData, {
     headers: {
        'Content-Type': 'multipart/form-data'
       }
